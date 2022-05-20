@@ -1,0 +1,382 @@
+:root {
+   --color-head: rgb(255, 255, 255);
+   /* --height-head: 430px; */
+   --bg-color: #22222E;
+   --bg-side-color: #292934;
+   --mark-color: #FFCB05;
+   font-size: calc(1vh + 0.5em);
+}
+
+
+
+body {
+   overflow-x: hidden;
+}
+
+.col-5 {
+   background-color: var(--bg-side-color);
+}
+
+i {
+   font-size: 2em;
+}
+
+.shadows {
+   box-shadow: 11px 19rem 16rem rgb(0 0 0 / 50%) !important;
+}
+
+/*****************************************
+***** Head section 1 *********************
+*****************************************/
+header {
+   background-color: var(--color-head);
+   height: var(--height-head);
+}
+
+.head_avatar {
+   background-color: var(--bg-side-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.avatar {
+   display: block;
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   padding: 4px;
+   border: 2px solid rgb(255, 125, 125);
+   object-fit: cover;
+}
+
+/*****************************************
+******* Head section 2 *******************
+*****************************************/
+.language li {
+   display: inline-block;
+   margin-right: 0.5em;
+}
+
+.language {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.current_language {
+   color: black;
+   text-decoration: none;
+   cursor: default;
+}
+
+.current_language:hover {
+   color: black;
+}
+
+.header_wrapper {
+   padding: 20px 20px 20px 40px;
+}
+
+h1 {
+   font-size: 3.5em;
+   margin-bottom: 20px;
+   margin-top: 0;
+}
+
+/* h3{
+   margin-bottom: 40px;
+} */
+
+
+.mark_head {
+   background-color: var(--mark-color);
+   max-width: 200px;
+   padding: 0.2em 0.9em;
+   border-radius: 0.3em;
+
+   margin-bottom: 40px;
+   /* font-size: 1.1em; */
+}
+
+.yellow_line {
+   width: 2.3em;
+   background-color: var(--mark-color);
+   height: 5px;
+   margin: 30px 0;
+}
+
+.mark_main {
+   background-color: var(--mark-color);
+   max-width: 200px;
+   padding: 0.2em 0.9em;
+   border-radius: 0.3em;
+}
+
+.mark {
+   background-color: var(--mark-color);
+}
+
+.table_head {
+   color: var(--bg-side-color);
+}
+
+/******************************
+********* side container ******
+*****************************/
+.bg_main {
+   color: #fff;
+   background-color: var(--bg-color);
+   padding: 2em;
+   font-size: 1.2em;
+   position: relative;
+}
+
+.main {
+   color: #fff;
+
+}
+
+.wrapper-side {
+   padding: 3em 3em 0 3em;
+   display: flex;
+   flex-direction: column;
+   color: #fff;
+   background-color: var(--bg-side-color);
+   font-size: 18px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid_skill {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 0.5em;
+   margin-bottom: 40px;
+   flex: 1 0 auto;
+}
+
+/* .grid_skill p:nth-child(2n+1) {
+   color: var(--mark-color);
+   font-weight: 500;
+} */
+
+.grid_contact {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr 3fr);
+   grid-gap: 0;
+}
+
+.table_contact {
+   padding: 1em;
+}
+
+.td_head {
+   text-transform: uppercase;
+   margin: 0;
+}
+
+.td_data {
+   color: rgb(175, 175, 175);
+}
+
+.table_head {
+   background-color: var(--mark-color);
+   width: 5vw;
+   padding: 1.4em;
+   padding-left: 1.6em;
+}
+
+
+/************************
+********** main *********
+*************************/
+.hobby {
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.hobby i {
+   color: var(--mark-color);
+}
+
+.hobby>li {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin: 1em;
+   /* height: 20px; */
+}
+
+.link-projects {
+   background: none;
+   border: none;
+   outline: none;
+   color: #fff;
+   outline: none;
+   border-bottom: 2px dashed var(--mark-color);
+}
+
+.link-projects:hover {
+   color: var(--mark-color);
+   transition: all .5s;
+}
+
+/***************************
+****************************
+**********next page*********
+****************************
+***************************/
+.container-fluid {
+   position: relative;
+   width: min(1300px, 80vw);
+   margin: 0 auto;
+   transform-style: preserve-3d;
+
+}
+
+.front,
+.back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+.front {
+   backface-visibility: hidden;
+   transform: rotateY(0deg);
+   z-index: 2;
+}
+
+.back {
+   background-color: var(--bg-side-color);
+   /* height: 300vh; */
+   transform: rotateY(-180deg);
+   color: #fff;
+   /* display: none; */
+}
+
+
+/* 
+.front {
+   display: none;
+}
+
+.back {
+   transform: rotateY(360deg);
+   z-index: 4;
+   height: auto;
+
+}
+
+.box {
+   display: block !important;
+} */
+
+/*************************
+**************************
+***********back***********
+**************************/
+.back__title {
+   position: relative;
+}
+
+.previous {
+   font-size: 50px;
+   position: absolute;
+   left: -5vw;
+   color: var(--bg-side-color);
+   transition: all 0.5s;
+   cursor: pointer;
+   opacity: 0;
+}
+
+.space-left {
+   left: -50vw;
+}
+
+.image_list {
+   display: flex;
+   justify-content: center;
+   overflow: hidden;
+   flex-direction: row;
+   align-items: center;
+}
+
+.image_list img {
+   width: 25%;
+}
+
+.box {
+   display: none;
+   transition: all 0.5s;
+}
+
+.git {
+   font-size: 40px;
+}
+
+/***************************
+****************************
+**********Adaptive**********
+****************************
+***************************/
+
+@media (max-width: 1140px) {
+   .bg_main {
+
+      padding: 1em;
+   }
+}
+
+@media (max-width: 992px) {
+   .previous {
+      left: -7vw;
+   }
+}
+
+@media (max-width: 768px) {
+   .previous {
+      left: -9vw;
+   }
+
+   .container-fluid {
+      width: min(75vw, 1300px);
+   }
+}
+
+@media (max-width: 576px) {
+   .container-fluid {
+      width: min(100vw, 1300px);
+   }
+
+   .back,
+   .front {
+      padding: 0 10px;
+   }
+
+   .head_avatar {
+      padding-top: 20px;
+   }
+
+   .back__title {
+      font-size: 30px;
+   }
+
+   .previous {
+      position: static;
+      margin-right: 40px;
+      color: #fff;
+      font-size: 30px;
+   }
+
+   .git {
+      display: none;
+   }
+}
+
+@media (max-width: 375px) {}

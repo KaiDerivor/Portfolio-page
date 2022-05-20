@@ -1,0 +1,276 @@
+:root {
+   --color-head: rgb(255, 255, 255);
+   /* --height-head: 430px; */
+   --bg-color: #22222E;
+   --bg-side-color: #292934;
+   --mark-color: #FFCB05;
+   --back-main-color: #c116b3;
+   --back-main-color-lite: #df75d6;
+   --lite-grey: rgb(73, 73, 73);
+   font-size: calc(1vh + 0.5em);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.back {
+   display: flex;
+}
+
+.back .side {
+   width: 25vw;
+   display: block;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   background-color: #6a246abf;
+   color: #fff;
+   transition: all 1s ease;
+}
+
+.back .side::before {
+   content: '';
+   position: absolute;
+   background-image: url(../img/pixel-city.jpg);
+   background-attachment: fixed;
+   background-size: contain;
+   background-repeat: no-repeat;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+}
+
+
+
+.head__img {
+   width: 12vw;
+   height: 12vw;
+   border-radius: 50%;
+   display: block;
+   object-fit: cover;
+   margin: 70px auto 30px auto;
+}
+
+.main__title-img {
+   text-align: center;
+   padding-bottom: 25px;
+}
+
+.main__title-img span {
+   font-size: 20px;
+}
+
+.back .side .wrapper {
+   position: fixed;
+   width: 20vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   transition: all 1s ease;
+
+}
+
+.back .wrapper-arrow {
+   content: '';
+   position: absolute;
+   right: -2.5vw;
+   right: -5vw;
+   top: 50%;
+   opacity: 0;
+   width: 0;
+   height: 0;
+   border-top: 15px solid transparent;
+   border-bottom: 15px solid transparent;
+   border-right: 15px solid white;
+}
+
+.navigation {
+   list-style: none;
+   flex: 1 0 auto;
+}
+
+.navigation__item {
+   padding: 10px;
+}
+
+.navigation__link,
+.contacts__link {
+   color: rgba(255, 255, 255, 0.747);
+   text-decoration: none;
+   display: block;
+}
+
+.navigation__link:hover,
+.contacts__link:hover {
+   color: #fff;
+   transition: all 0.5s;
+}
+
+.contacts {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+}
+
+.contacts__item {
+   padding: 10px;
+}
+
+.contacts__link {
+   font-size: 20px;
+}
+
+.back .main {
+   width: 75vw;
+   padding: 30px 30px 120px 40px;
+   font-size: 16px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.back .main .wrapper {
+   padding-left: 30px;
+   border-left: 1px solid green;
+   opacity: 0;
+}
+
+.back .main .wrapper .box {
+   position: relative;
+   margin-top: 200px;
+   opacity: 0;
+   transition: all 0.8s ease;
+}
+
+.back .main .wrapper .box::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: -30px;
+   width: 10px;
+   height: 10px;
+   transform: translateX(-50%);
+   background-color: var(--back-main-color);
+}
+
+
+
+.back .main .box__content {
+   padding-bottom: 20px;
+   list-style: none;
+}
+
+.back .main .wrapper .content__item {
+   margin: 10px 0;
+}
+
+.content__item p {
+   text-indent: 20px;
+}
+
+.back .main .wrapper .line-space-left {
+   display: inline-block;
+   padding-left: 20px;
+}
+
+.back .main .wrapper .box__img {
+   width: 50%;
+   float: right;
+   padding: 0 0 15px 15px;
+}
+
+.hot-links {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+
+.look-page {
+   color: #fff;
+   background-color: var(--back-main-color);
+   /* padding: 10px 15px; */
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 30px;
+   height: 40px;
+
+   text-decoration: none;
+}
+
+.look-page:hover {
+   background-color: var(--lite-grey);
+   color: #fff;
+}
+
+.list-tools {
+   display: flex;
+   flex: row;
+   flex-wrap: wrap;
+   align-items: center;
+   list-style: none;
+
+}
+
+.list-tools__item {
+   background-color: var(--back-main-color-lite);
+   color: #fff;
+   padding: 5px 15px;
+   margin: 5px;
+}
+
+
+/* construct */
+
+.side-space {
+   margin-right: 1300px;
+}
+
+
+/***************************
+****************************
+**********Adaptive**********
+****************************
+***************************/
+
+@media (max-width: 1140px) {}
+
+@media (max-width: 992px) {
+   .back {
+      display: block;
+   }
+
+   .back .side {
+      width: 100vw;
+   }
+
+   .back .side .wrapper {
+      position: relative;
+      width: 100vw;
+      height: auto;
+      padding-left: 40px;
+   }
+
+   .back .main {
+      width: 100%;
+   }
+
+   .head__img {
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+   }
+
+   .back .side::before {
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 375px) {}
