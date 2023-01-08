@@ -1,0 +1,14 @@
+Adaptively I make up on HTML5, CSS3 and JavaScript according to the design layout in figma for all popular devices and browsers.
+
+I type using gulp, scss, JavaScript.
+
+Typesetting:
+
+-validation in the W3C validator
+-checking optimization in google pagespeed insights
+-compliance with BEM-naming
+-meeting deadlines
+
+I give a guarantee for the layout (during the week all the mistakes I made will be corrected).
+
+Нou can see examples of my work here: https://kaiderivor.github.io/Portfolio-page/projects.html

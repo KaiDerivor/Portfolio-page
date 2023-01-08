@@ -12,8 +12,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+html {
+   /* scroll-behavior: smooth; */
+   font-family: serif;
+}
+
 .back {
    display: flex;
+
 }
 
 .back .side {
@@ -65,10 +71,10 @@
 
 .back .side .wrapper {
    position: fixed;
-   width: 20vw;
    height: 100vh;
    display: flex;
    flex-direction: column;
+   gap:20px;
    transition: all 1s ease;
 
 }
@@ -128,6 +134,8 @@
    padding: 30px 30px 120px 40px;
    font-size: 16px;
    font-family: 'Poppins', sans-serif;
+   display: flex;
+   flex-direction: column;
 }
 
 .back .main .wrapper {
@@ -141,6 +149,10 @@
    margin-top: 200px;
    opacity: 0;
    transition: all 0.8s ease;
+}
+.box__title{
+   font-weight: 500;
+   font-size: 1.5em;
 }
 
 .back .main .wrapper .box::after {
